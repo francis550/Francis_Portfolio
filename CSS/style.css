@@ -1,0 +1,388 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mazzard', sans-serif;
+    line-height: 1.2;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Header et Navigation */
+header {
+
+    background: rgba(1, 4, 53, 0.678); /* Arrière-plan semi-transparent */
+    backdrop-filter: blur(10px); /* Effet de flou */
+    padding: 1.5rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #008cff;
+}
+
+
+
+/* Sections communes */
+section {
+    padding: 5rem 5%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1,5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.highlight {
+    color: #008cff;
+    font-weight: bold;
+
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-image  {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image .hero-main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+
+/* Boutons */
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #008cff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: transform 0.3s;
+}
+
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+/* À propos */
+.soutitre {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #008cff;
+    font-weight: bold;
+    
+}
+.soutitree {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #008cff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.profile-image .profile-image-main  {
+    width: 100%;
+    height: auto;
+    max-width: auto;
+    max-height: auto;
+}
+
+.about-text {
+    flex: 1;
+    text-align: justify;
+}
+
+/* Projets */
+.projects {
+    backdrop-filter: blur(100px); /* Effet de flou */
+    background-image: url('C:/Users/Asus/Desktop/ACTIVITE/ACTIVITE 6/images/bac7.jpg');
+    background-size: cover; 
+
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: rgba(233, 231, 231, 0.678); /* Arrière-plan semi-transparent */
+    backdrop-filter: blur(20px); /* Effet de flou */
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+.project-image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project-image-wrapper .project-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.technologies .html {
+    display: inline-block;
+    color: #ffffff;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.2rem 0.5rem;
+    background: #e34c26;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.technologies .css {
+    display: inline-block;
+    color: #ffffff;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.2rem 0.5rem;
+    background: #264de4;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.technologies .js {
+    display: inline-block;
+    color: #000000;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.2rem 0.5rem;
+    background: #f0db4f;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+/* test */
+
+
+
+/* Compétences */
+.soutitre1  {
+    color: #ffffff;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.skill-bar {
+    margin-bottom: 1.5rem;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #008cff;
+    border-radius: 5px;
+}
+
+/* Contact */
+.contact {
+    backdrop-filter: blur(10px); /* Effet de flou */
+    min-height: 100vh;
+    background-image: url('C:/Users/Asus/Desktop/ACTIVITE/ACTIVITE 6/images/bac6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #000;
+    color: #fff;
+}
+
+footer a {
+    color: #008cff;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+
+/* Menu Hamburger */
+.menutoggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .menutoggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9); /* Arrière-plan sombre pour lisibilité */
+        flex-direction: column;
+        padding: 1rem;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex; /* Affiche la liste quand la classe 'active' est ajoutée */
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.5rem;
+    }
+}
