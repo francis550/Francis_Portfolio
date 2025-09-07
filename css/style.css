@@ -172,7 +172,7 @@ h2 {
 /* Projets */
 .projects {
     backdrop-filter: blur(100px); /* Effet de flou */
-    background-image: url('C:/Users/Asus/Desktop/Francis_Portfolio/images/bac7.jpg');
+    background-color: #0f0141;
     background-size: cover; 
 
 }
@@ -274,7 +274,7 @@ h2 {
 .contact {
     backdrop-filter: blur(10px); /* Effet de flou */
     min-height: 100vh;
-    background-image: url('C:/Users/Asus/Desktop/Francis_Portfolio/images/bac6.jpg');
+    background-color: #0f0141;
     background-size: cover;
     background-position: center;
 }
