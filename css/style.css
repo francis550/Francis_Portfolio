@@ -6,17 +6,27 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.2;
-    color: #333;
+    line-height: 1.25;
+    color: #2b2a2a;
     background-color: #fff;
+    font-family: 'Mazzard H';
+    src: url('MazzardH-Regular.eot');
+    src: local('Mazzard H Regular'), local('MazzardH-Regular'),
+        url('MazzardH-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MazzardH-Regular.woff2') format('woff2'),
+        url('MazzardH-Regular.woff') format('woff'),
+        url('MazzardH-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    scroll-behavior: smooth;
 }
+
 
 /* Header et Navigation */
 header {
 
-    background: rgba(1, 4, 53, 0.678); /* Arrière-plan semi-transparent */
-    backdrop-filter: blur(10px); /* Effet de flou */
+    background: rgba(0, 3, 39, 0.788); /* Arrière-plan semi-transparent */
+    backdrop-filter: blur(20px); /* Effet de flou */
     padding: 1.5rem 5%;
     position: fixed;
     width: 100%;
@@ -65,7 +75,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1,5rem;
+    font-size: 2,5rem;
     margin-bottom: 1.5rem;
     text-align: left;
 }
@@ -169,11 +179,15 @@ h2 {
     text-align: justify;
 }
 
+
 /* Projets */
 .projects {
-    backdrop-filter: blur(100px); /* Effet de flou */
-    background-color: #0f0141;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bac7.jpg');
     background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 .projects-grid {
@@ -272,10 +286,11 @@ h2 {
 
 /* Contact */
 .contact {
-    backdrop-filter: blur(10px); /* Effet de flou */
-    min-height: 100vh;
-    background-color: #0f0141;
-    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bac6.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
     background-position: center;
 }
 
